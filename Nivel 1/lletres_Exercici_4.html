@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ejercicio 4_Letras repetidas</title>
+
+        <script>
+            var nombre = prompt("Introduce tu nombre").toUpperCase();
+            var apellido = prompt("Introduce tu apellido").toUpperCase();
+        </script>
+    </head>
+
+    <body>
+        <h3>Exercici 4_Nivell 1:</h3>
+        <p>Crea una altra array amb el teu cognom on cada posició correspongui a una lletra</p>
+        <p>Fusiona els dos arrays en un. A més, afegeix una posició amb un espai buit entre la primera i la segona. </p>
+        <p>És a dir, partim de 'array name i surname i al acabar l’execució només tindrem una que es dirà fullName</p>
+        
+        <br>
+        <p>Obrir <b style="color: blue;">Consola</b> per veure detalls del resultat</p><br>
+       
+        <script> 
+            var nom = [];
+            var cognom = [];
+            var nom_cognom = [];
+            var espai=" ";
+          
+            for(i=0; i< nombre.length; i++){ //Array nom per lletres separades
+                nom.push(nombre[i]);
+            }
+            for(i=0; i < apellido.length; i++){ //Array cognom per lletres separades
+                cognom.push(apellido[i]);
+            }
+            nom.push(espai);
+            nom_cognom = nom.concat(cognom);
+            
+            console.log(nom_cognom);
+           
+        </script>
+    </body>
+
+    
+</html>
