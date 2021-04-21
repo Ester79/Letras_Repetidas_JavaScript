@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Nivel 3_</title>
+
+  <link rel="stylesheet" href="styles/bootstrap.css" />
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+
+<body background="images/fons2.jpg" class="scrollspy-example2">
+  <!--Caja general-->
+  <div class="container-fluid general">
+    <!--Temática-->
+    <div class="jumbotron jumbotron-fluid shadow p-3 mb-5 bg-light rounded">
+      <div class="container-fluid">
+        <h1 class="js">JavaScript</h1>
+      </div>
+    </div>
+
+    <!--Description-->
+    <div class="jumbotron jumbotron-fluid shadow p-3 mb-5 bg-light rounded">
+      <div class="container-fluid">
+        <button type="button" class="btn-info shadow p-3 mb-3 bg-blue rounded" data-toggle="modal"
+          data-target="#exampleModalScrollable">
+          What will you learn?
+        </button>
+        <h4>Choose the level below</h4>
+      </div>
+
+      <div class="container-fluid center">
+        <div id="accordion" role="tablist">
+
+    <!--LEVEL 1-->
+          <div class="card">
+            <div class="card-header" role="tab" id="headingOne">
+              <h5 class="mb-0">
+                <a class="collapsed" data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Level 1
+                </a>
+              </h5>
+            </div>
+           
+            <!--Exercise 1 Level 1-->
+            <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
+              <div class="card-body alert-dark">
+                <h4 class="card-title">Exercise 1</h4>
+                <p>Create an array with your name where each position corresponds to a letter. Loop this array and console each of the letters.</p>
+                <button type="button" class="btn btn-secondary" aria-haspopup="true" aria-expanded="false"><a href="html/lletres_Exercici_1bis.html" target="_blank">Example</a>
+                </button>
+              </div>
+            </div>
+
+            <!--Exercise 2 Level 1-->
+            <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
+              <div class="card-body alert-secondary">
+                <h4 class="card-title">Exercise 2</h4>
+                <p>In the loop, if the letter is a vowel, print on the console: <i><b>'I found the VOWEL:_'</b></i>. Otherwise, print <i><b>'I found the CONSONANT:_'.</b></i></p>
+                <p>If you find a number, display: <i><b>'People's names do not contain the number:_'.</b></i></p>
+                <button type="button" class="btn btn-secondary" aria-haspopup="true" aria-expanded="false"><a href="html/lletres_Exercici_2bis.html" target="_blank">Example</a>
+                </button>
+              </div>
+            </div>
+
+            <!--Exercise 3 Level 1-->
+            <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
+              <div class="card-body alert-dark">
+                <h4 class="card-title">Exercise 3</h4>
+                <p>Store the letter of the array and the number of times they appear on a Map.</p>
+                <button type="button" class="btn btn-secondary" aria-haspopup="true" aria-expanded="false"><a href="html/lletres_Exercici_3bis.html" target="_blank">Example</a>
+                </button>
+              </div>
+            </div>
+
+            <!--Exercise 4 Level 1-->
+            <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
+              <div class="card-body alert-secondary exercises">
+                <h4 class="card-title">Exercise 4</h4>
+                <p>Create another array with your last name where each position corresponds to a letter.</p>
+                <p>Merge the two arrays into one. Also, add a position with an empty space between the first and second. That is, we start from 'array name and surname' and at the end of the execution we will only have one called fullName.</p>
+                <button type="button" class="btn btn-secondary" aria-haspopup="true" aria-expanded="false"><a href="html/lletres_Exercici_4bis.html" target="_blank">Example</a>
+                </button>
+              </div>
+            </div>
+
+
+
+<!--LEVEL 2-->
+            <div class="card">
+              <div class="card-header" role="tab" id="headingTwo">
+                <h5 class="mb-0">
+                  <a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false"
+                    aria-controls="collapseTwo">
+                    Level 2
+                  </a>
+                </h5>
+              </div>
+
+              <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+                <div class="card-body alert-secondary exercises">
+                  <h4 class="card-title">Exercise 1</h4>
+                  <p>Create a function that returns an array with all emails (without repeatin) of the following text.</p>
+                  <button type="button" class="btn btn-secondary" aria-haspopup="true" aria-expanded="false"><a href="html/Nivel 2bis.html.html" target="_blank">Example</a>
+                  </button>
+                </div>
+              </div>
+
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+    <!-- Modal -->
+    <div class="modal" id="exampleModalScrollable" tabindex="-1" role="dialog"
+      aria-labelledby="exampleModalScrollableLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenteredLabel">
+              The exercise is to show by console how many times each letter of your name and surname appears with different variants (phases)
+            </h5>
+            
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <h6>CONCEPTS:</h6><br>
+            <p>Conditionals IF/ELSE</p>
+            <p>Functions</p>
+            <p>Arrays and other structures</p>
+            <p>Regex: regular expressions</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/functions.js"></script>
+    <script src="js/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

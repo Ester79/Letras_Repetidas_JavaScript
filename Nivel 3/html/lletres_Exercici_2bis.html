@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ejercicio 2_Letras repetidas</title>
+
+        <script>
+            var nombre = prompt("Introduce tu nombre").toUpperCase();
+        </script>
+    </head>
+
+    <body>
+        <h3>Exercici 2_Nivell 1:</h3>
+        <p>Crea un array amb el teu nom on cada posició correspongui a una lletra.</p>
+        <p>Fes un bucle que recorri aquest array i mostri per consola cadascuna de les lletres.</p>
+        <p>Al bucle, si la lletra és una vocal imprimeix a la consola: <b>"He trobat la VOCAL:_"</b>.</p>
+        <p>Si no, imprimeix <b>"He trobat la CONSONANT:_"</b>.</p>
+        <p>Si trobes un número, mostra per pantalla: <b>"Els noms de persones no contenen el número:_"</b></p>
+        <br>
+        <p>Obrir <b style="color: blue;">Consola</b> per veure detalls del resultat</p><br>
+        <p>Resultat amb <b> 'document.write()</b></p>
+
+        <script> 
+            var nom = [];
+            let i=0;
+            let mensaje;
+            
+            for(i; i< nombre.length; i++){
+                
+                if(!isNaN(nombre[i])){
+                    nom.push(nombre[i]);
+                    mensaje = "Els noms de persones no contenen el número: " + nom[i];
+                }else if(nombre[i] == "A" || nombre[i] == "E" || nombre[i] == "I" || nombre[i] == "O" || nombre[i] == "U"){
+                    nom.push(nombre[i]);
+                    mensaje = "He trobat la VOCAL: " + nom[i];
+                }else{
+                    nom.push(nombre[i]);
+                    mensaje = "He trobat la CONSONANT: " + nom[i];
+                }
+                console.log(mensaje); 
+                document.write(mensaje + "<br/>" + "<br/>");
+            }
+        </script>
+    </body>
+
+    
+</html>

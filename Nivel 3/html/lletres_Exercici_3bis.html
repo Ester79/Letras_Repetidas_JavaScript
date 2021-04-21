@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Ejercicio 3_Letras repetidas</title>
+
+    <script>
+      var nombre = prompt("Introduce tu nombre").toUpperCase();
+      var frecuencia_letras = {};
+
+      for (i = 0; i < nombre.length; i++) {
+
+        let letra = nombre[i];
+
+          if(frecuencia_letras[letra]){
+
+             frecuencia_letras[letra] += 1;
+             
+          }else{
+            frecuencia_letras[letra]= 1;
+          }
+       
+      }
+      console.log(frecuencia_letras);
+    </script>
+  </head>
+
+  <body>
+    <h3>Ejercicio 3_Nivel 1</h3>
+    <p>Emmagatzemar en un Map les lletres de l'array y el nombre de vegades que apareixen</p>
+    <p>Obrir <b style="color: blue;">Consola</b> per veure resultat i les vegades que apareix cada lletra</p>
+    <p>El nom que has introduit: <b> <script>document.write(nombre)</script></b></p>
+  </body>
+</html>

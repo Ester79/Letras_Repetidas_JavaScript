@@ -1,0 +1,54 @@
+body{
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    margin: auto;
+    background-repeat: no-repeat; 
+}
+
+a{
+    color:white;
+}
+
+.general{
+    width: 90%;
+    margin-top: 40px;
+    background-color: unset;
+    padding-bottom: 50px;
+    padding-top: 40px;
+}
+
+.card-body{
+    text-align: left
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    border: double 3px white;
+    background-color: #17a2b8;
+    color: white;
+    width: 70px;
+}
+
+.card-header{
+    background-color: salmon;
+}
+
+.modal-body{
+    text-align: left;
+}
+
+h6{
+    background-color: salmon;
+    color:white;
+}
+
+
+
+
+
+
+
